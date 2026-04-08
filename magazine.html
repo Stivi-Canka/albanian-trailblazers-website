@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Albanian Trailblazer | Albanian Trailblazers</title>
+  <meta name="description" content="The Albanian Trailblazer — a publication celebrating the achievements and talents within the Albanian community. Read all issues.">
+
+  <meta property="og:title" content="The Albanian Trailblazer Magazine">
+  <meta property="og:description" content="Stories, inspiration, and spotlights from the Albanian community.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/magazine.css">
+</head>
+<body>
+
+  <!-- ========= NAVIGATION ========= -->
+  <nav class="nav scrolled" id="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__brand">
+        <span class="nav__logo" role="img" aria-label="Albanian Trailblazers logo"></span>
+        <span class="nav__name">Albanian Trailblazers</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="about.html" class="nav__link">Team</a></li>
+        <li class="nav__item--has-dropdown">
+          <button class="nav__link nav__dropdown-toggle" aria-expanded="false">Services <svg width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <ul class="nav__dropdown" role="menu">
+            <li><a href="mentors.html" role="menuitem">Mentorship</a></li>
+            <li><a href="workshops.html" role="menuitem">Workshops</a></li>
+            <li><a href="magazine.html" role="menuitem">The Albanian Trailblazers Magazine</a></li>
+            <li><a href="podcast.html" role="menuitem">The Albanian Trailblazers Podcast</a></li>
+          </ul>
+        </li>
+        <li class="nav__item--has-dropdown">
+          <button class="nav__link nav__dropdown-toggle" aria-expanded="false">Projects <svg width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <ul class="nav__dropdown" role="menu">
+            <li><a href="qemal.html" role="menuitem">Qemal</a></li>
+            <li><a href="porta.html" role="menuitem">PORTA</a></li>
+          </ul>
+        </li>
+        <li class="nav__item--has-dropdown">
+          <button class="nav__link nav__dropdown-toggle" aria-expanded="false">Apply <svg width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <ul class="nav__dropdown" role="menu">
+            <li><a href="apply-mentor.html" role="menuitem">Apply to be a Mentor</a></li>
+            <li><a href="apply-mentee.html" role="menuitem">Apply to be a Mentee</a></li>
+            <li><a href="jobs.html" role="menuitem">Open Positions</a></li>
+          </ul>
+        </li>
+        <li><a href="support.html" class="btn btn--ghost-red nav__support">Support Us</a></li>
+      </ul>
+      <button class="nav__hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="nav__overlay">
+      <a href="about.html" class="nav__overlay-link">Team</a>
+      <div class="nav__overlay-group">
+        <button class="nav__overlay-toggle">Services <svg width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="nav__overlay-sub">
+          <a href="mentors.html">Mentorship</a>
+          <a href="workshops.html">Workshops</a>
+          <a href="magazine.html">The Magazine</a>
+          <a href="podcast.html">The Podcast</a>
+        </div>
+      </div>
+      <div class="nav__overlay-group">
+        <button class="nav__overlay-toggle">Projects <svg width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="nav__overlay-sub">
+          <a href="qemal.html">Qemal</a>
+          <a href="porta.html">PORTA</a>
+        </div>
+      </div>
+      <div class="nav__overlay-group">
+        <button class="nav__overlay-toggle">Apply <svg width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="nav__overlay-sub">
+          <a href="apply-mentor.html">Apply to be a Mentor</a>
+          <a href="apply-mentee.html">Apply to be a Mentee</a>
+          <a href="jobs.html">Open Positions</a>
+        </div>
+      </div>
+      <a href="support.html" class="nav__overlay-link">Support Us</a>
+    </div>
+  </nav>
+
+  <!-- ========= HERO ========= -->
+  <section class="magazine-hero">
+    <div class="magazine-hero__grid" aria-hidden="true"></div>
+    <div class="container">
+      <div class="magazine-hero__inner">
+        <p class="section-label">The Magazine</p>
+        <h1 class="magazine-hero__title">The Albanian<br><span>Trailblazer</span></h1>
+        <p class="magazine-hero__sub">Stories, inspiration, and spotlights celebrating the achievements and talents of the Albanian community — worldwide.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========= ISSUES ========= -->
+  <section class="magazine-issues">
+    <div class="container">
+      <p class="section-label">All Issues</p>
+      <div class="magazine-issues__grid">
+
+        <a href="assets/the-albanian-trailblazer/the-albanian-trailblazer-october-2024.pdf"
+           class="magazine-issue" target="_blank" rel="noopener">
+          <img class="magazine-issue__img" src="assets/the-albanian-trailblazer/cover/magazine-cover-october-2024.webp" alt="Issue 01 — October 2024">
+          <div class="magazine-issue__overlay">
+            <span class="magazine-issue__num">Issue 01</span>
+            <h3 class="magazine-issue__name">The Albanian Trailblazer</h3>
+            <p class="magazine-issue__date">October 2024</p>
+            <span class="magazine-issue__cta">
+              Read Issue
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+        </a>
+
+        <a href="assets/the-albanian-trailblazer/the-albanian-trailblazer-january-2025.pdf"
+           class="magazine-issue" target="_blank" rel="noopener">
+          <img class="magazine-issue__img" src="assets/the-albanian-trailblazer/cover/magazine-cover-january-2025.webp" alt="Issue 02 — January 2025">
+          <div class="magazine-issue__overlay">
+            <span class="magazine-issue__num">Issue 02</span>
+            <h3 class="magazine-issue__name">The Albanian Trailblazer</h3>
+            <p class="magazine-issue__date">January 2025</p>
+            <span class="magazine-issue__cta">
+              Read Issue
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+        </a>
+
+        <a href="assets/the-albanian-trailblazer/the-albanian-trailblazer-september-2025.pdf"
+           class="magazine-issue" target="_blank" rel="noopener">
+          <img class="magazine-issue__img" src="assets/the-albanian-trailblazer/cover/magazine-cover-september-2025.webp" alt="Issue 03 — September 2025">
+          <div class="magazine-issue__overlay">
+            <span class="magazine-issue__num">Issue 03</span>
+            <h3 class="magazine-issue__name">The Albanian Trailblazer</h3>
+            <p class="magazine-issue__date">September 2025</p>
+            <span class="magazine-issue__cta">
+              Read Issue
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========= FOOTER ========= -->
+  <footer class="footer" id="footer">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <div class="footer__brand">
+          <span class="footer__logo" role="img" aria-label="Albanian Trailblazers logo"></span>
+          <span class="footer__brand-name">Albanian Trailblazers</span>
+        </div>
+        <p class="footer__copyright">&copy; <span class="footer__year"></span> Albanian Trailblazers. All rights reserved.</p>
+        <p class="footer__location">Toronto, Ontario, Canada</p>
+      </div>
+      <nav class="footer__nav">
+        <div class="footer__nav-group">
+          <span class="footer__nav-label">Services</span>
+          <a href="mentors.html">Mentorship</a>
+          <a href="workshops.html">Workshops</a>
+          <a href="magazine.html">Magazine</a>
+          <a href="podcast.html">Podcast</a>
+        </div>
+        <div class="footer__nav-group">
+          <span class="footer__nav-label">Projects</span>
+          <a href="qemal.html">Qemal</a>
+          <a href="porta.html">PORTA</a>
+        </div>
+        <div class="footer__nav-group">
+          <span class="footer__nav-label">Apply</span>
+          <a href="apply-mentor.html">Be a Mentor</a>
+          <a href="apply-mentee.html">Be a Mentee</a>
+          <a href="jobs.html">Open Positions</a>
+        </div>
+      </nav>
+      <div class="footer__social">
+        <div class="footer__social-icons">
+          <a href="https://www.instagram.com/albanian_trailblazers/" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5Zm4.25 3.25a5.25 5.25 0 1 1 0 10.5 5.25 5.25 0 0 1 0-10.5Zm0 1.5a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5Zm5.5-1.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/albanian-trailblazers/" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.47 2H3.53A1.45 1.45 0 0 0 2 3.38v17.24A1.45 1.45 0 0 0 3.53 22h16.94A1.45 1.45 0 0 0 22 20.62V3.38A1.45 1.45 0 0 0 20.47 2ZM8.09 18.74H5.13V9.72h2.96ZM6.6 8.48a1.72 1.72 0 1 1 0-3.43 1.72 1.72 0 0 1 0 3.43Zm12.14 10.26h-2.96v-4.83c0-1.21-.44-2.04-1.54-2.04a1.65 1.65 0 0 0-1.55 1.09 2 2 0 0 0-.1.73v5.05h-2.96V9.72h2.96v1.27a2.92 2.92 0 0 1 2.66-1.46c1.94 0 3.49 1.27 3.49 3.99Z"/></svg>
+          </a>
+          <a href="https://youtube.com/@albaniantrailblazers" aria-label="YouTube" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.54 3.5 12 3.5 12 3.5s-7.54 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14c1.84.55 9.38.55 9.38.55s7.54 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.81ZM9.54 15.57V8.43L15.82 12Z"/></svg>
+          </a>
+        </div>
+        <p class="footer__email"><a href="mailto:info@albaniantrailblazers.com">info@albaniantrailblazers.com</a></p>
+      </div>
+    </div>
+    <div class="container">
+      <p class="footer__bottom">Built with care by the Albanian Trailblazers team.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

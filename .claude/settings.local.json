@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(command ls:*)",
+      "Bash(mv \"Arban Gjyzari.png.avif\" old/arban-gjyzari.avif)",
+      "Bash(mv \"Arjana Kaba.avif\" old/arjana-kaba.avif)",
+      "Bash(mv \"Denis Lalaj.avif\" old/denis-lalaj.avif)",
+      "Bash(mv \"Dorentina Humolli.avif\" old/dorentina-humolli.avif)",
+      "Bash(mv \"Edera Dibra.avif\" old/edera-dibra.avif)",
+      "Bash(grep -l 'href=\"#\" role=\"menuitem\">Workshops\\\\|href=\"#\">Workshops' *.html)",
+      "Bash(grep -l 'apply-mentee.html\" role=\"menuitem\">Apply to be a Mentee' *.html)",
+      "Bash(python3 -)",
+      "Bash(grep -rn 'href=\"#\"' *.html)",
+      "Bash(grep -rn 'YOUR_' *.html)",
+      "Bash(grep -rn 'index.html#mission' *.html)",
+      "Bash(grep -rn 'href=\"index.html#mission\\\\|nav__link\">About' *.html)",
+      "Bash(grep -rn 'opportunities.html.*menuitem\\\\|Opportunities for Albanians.*menuitem' *.html)",
+      "Bash(grep -rn 'opportunities.html.*menuitem' *.html)"
+    ]
+  }
+}

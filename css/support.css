@@ -1,0 +1,157 @@
+/* ========= SUPPORT PAGE ========= */
+
+.page--dark {
+  background: var(--color-void);
+}
+
+/* ========= FULL-VIEWPORT MAIN SECTION ========= */
+/* Everything the donor needs is visible without scrolling */
+.support-main {
+  position: relative;
+  min-height: 100vh;
+  background: var(--color-void);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Red radial glow — matches site-wide dark hero style */
+.support-main::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 55% at 50% -5%, rgba(224,85,53,0.18) 0%, transparent 65%);
+  pointer-events: none;
+}
+
+/* Faint grid texture for depth */
+.support-main__grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.017) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.017) 1px, transparent 1px);
+  background-size: 64px 64px;
+  pointer-events: none;
+  -webkit-mask-image: radial-gradient(ellipse 75% 75% at 50% 50%, black 20%, transparent 100%);
+  mask-image: radial-gradient(ellipse 75% 75% at 50% 50%, black 20%, transparent 100%);
+}
+
+/* Inner wrapper: stacks copy + cards, centered */
+.support-main__inner {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 120px 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 52px;
+}
+
+/* ========= COPY BLOCK ========= */
+.support-copy {
+  text-align: center;
+  max-width: 600px;
+}
+
+.support-copy .section-label {
+  margin-bottom: 20px;
+}
+
+.support-copy__title {
+  font-size: clamp(3rem, 8vw, 5.5rem);
+  font-weight: 700;
+  color: var(--color-white);
+  letter-spacing: -0.04em;
+  line-height: 1.02;
+  margin-bottom: 20px;
+}
+
+.support-copy__title span {
+  color: var(--color-red);
+}
+
+.support-copy__sub {
+  font-size: 1.0625rem;
+  color: rgba(255,255,255,0.42);
+  line-height: 1.75;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* ========= DONATION CARDS ========= */
+.support-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  width: 100%;
+  max-width: 780px;
+}
+
+@media (min-width: 640px) {
+  .support-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.support-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 32px 36px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-top: 2px solid rgba(255,255,255,0.07);
+  border-radius: 16px;
+  text-decoration: none;
+  transition: border-color 0.25s, background 0.25s, transform 0.22s, box-shadow 0.25s;
+}
+
+.support-card:hover {
+  border-color: rgba(224,85,53,0.5);
+  border-top-color: var(--color-red);
+  background: rgba(224,85,53,0.04);
+  transform: translateY(-5px);
+  box-shadow: 0 24px 64px rgba(0,0,0,0.35);
+}
+
+.support-card__platform {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-red);
+}
+
+.support-card__title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-white);
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+}
+
+.support-card__desc {
+  font-size: 0.9375rem;
+  color: rgba(255,255,255,0.38);
+  line-height: 1.65;
+  flex: 1;
+}
+
+.support-card__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-red);
+  transition: gap 0.2s;
+}
+
+.support-card:hover .support-card__cta {
+  gap: 14px;
+}

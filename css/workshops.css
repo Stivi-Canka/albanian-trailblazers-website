@@ -1,0 +1,304 @@
+/* ========= WORKSHOPS PAGE ========= */
+
+/* ── Hero ── */
+.workshops-hero {
+  position: relative;
+  background: var(--color-void);
+  padding: 160px 0 96px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.workshops-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 55% at 50% -5%, rgba(224,85,53,0.20) 0%, transparent 65%);
+  pointer-events: none;
+}
+
+.workshops-hero__grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.017) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.017) 1px, transparent 1px);
+  background-size: 64px 64px;
+  pointer-events: none;
+  -webkit-mask-image: radial-gradient(ellipse 75% 75% at 50% 50%, black 20%, transparent 100%);
+  mask-image: radial-gradient(ellipse 75% 75% at 50% 50%, black 20%, transparent 100%);
+}
+
+.workshops-hero__inner {
+  position: relative;
+  z-index: 1;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.workshops-hero__title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(2.75rem, 6vw, 4.5rem);
+  font-weight: 700;
+  color: var(--color-white);
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  margin: 14px 0 20px;
+}
+
+.workshops-hero__title span {
+  color: var(--color-red);
+}
+
+.workshops-hero__sub {
+  font-size: 1.0625rem;
+  color: rgba(255,255,255,0.48);
+  line-height: 1.65;
+}
+
+/* ── Past Workshops ── */
+.workshops-past {
+  background: var(--color-cream-dark);
+  padding: 80px 0 100px;
+}
+
+/* ── Format badge ── */
+.workshop-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-red);
+  border: 1px solid rgba(224,85,53,0.3);
+  border-radius: 100px;
+  padding: 4px 10px;
+  margin-bottom: 18px;
+}
+
+.workshop-badge svg {
+  width: 10px;
+  height: 10px;
+  flex-shrink: 0;
+}
+
+/* ── Stacked list of featured cards ── */
+.workshops-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 48px;
+}
+
+/* ── Featured Card ── */
+.workshop-featured {
+  margin-top: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  border-radius: 20px;
+  overflow: hidden;
+  background: var(--color-void);
+  box-shadow: 0 24px 64px rgba(21,19,14,0.16);
+}
+
+@media (min-width: 860px) {
+  .workshop-featured {
+    grid-template-columns: 1fr 1fr;
+    min-height: 500px;
+  }
+}
+
+.workshop-featured__text {
+  padding: 48px 48px 52px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.workshop-featured__title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(1.5rem, 2.6vw, 2rem);
+  font-weight: 700;
+  color: var(--color-white);
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+
+.workshop-featured__desc {
+  font-size: 0.9375rem;
+  color: rgba(255,255,255,0.52);
+  line-height: 1.75;
+  margin-bottom: 28px;
+}
+
+.workshop-featured__locations {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.workshop-featured__loc {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.workshop-featured__loc svg {
+  width: 14px;
+  height: 14px;
+  color: var(--color-red);
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.workshop-featured__loc-name {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-white);
+}
+
+.workshop-featured__loc-date {
+  font-size: 0.8125rem;
+  color: rgba(255,255,255,0.38);
+  margin-top: 1px;
+}
+
+.workshop-featured__photo {
+  position: relative;
+  min-height: 300px;
+  overflow: hidden;
+}
+
+@media (min-width: 860px) {
+  .workshop-featured__photo {
+    min-height: unset;
+  }
+}
+
+.workshop-featured__photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.workshop-featured:hover .workshop-featured__photo img {
+  transform: scale(1.04);
+}
+
+/* left-edge fade into dark panel */
+.workshop-featured__photo::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(21,19,14,0.35) 0%, transparent 40%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* ── Reverse variant (photo left, text right) ── */
+@media (min-width: 860px) {
+  .workshop-featured--reverse .workshop-featured__text {
+    order: 2;
+  }
+  .workshop-featured--reverse .workshop-featured__photo {
+    order: 1;
+  }
+  .workshop-featured--reverse .workshop-featured__photo::before {
+    background: linear-gradient(to left, rgba(21,19,14,0.35) 0%, transparent 40%);
+  }
+}
+
+/* ── Date / partner line ── */
+.workshop-featured__date {
+  margin-top: 20px;
+  font-size: 0.8125rem;
+  color: rgba(255,255,255,0.35);
+  letter-spacing: 0.01em;
+}
+
+/* ── Watch recording CTA inside card ── */
+.workshop-featured__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-red);
+  text-decoration: none;
+  transition: gap 0.2s ease;
+}
+
+.workshop-featured__link:hover {
+  gap: 13px;
+}
+
+/* ── Coming Up ── */
+.workshops-coming {
+  background: var(--color-void);
+  padding: 80px 0 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.workshops-coming::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 60% 50% at 50% 100%, rgba(224,85,53,0.10) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.workshops-coming__inner {
+  position: relative;
+  z-index: 1;
+  max-width: 640px;
+}
+
+.workshops-coming__title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  font-weight: 700;
+  color: var(--color-white);
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-bottom: 18px;
+}
+
+.workshops-coming__desc {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.48);
+  line-height: 1.75;
+  margin-bottom: 36px;
+}
+
+.workshops-coming__topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.workshops-coming__topic {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.65);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 100px;
+  padding: 7px 16px;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.workshops-coming__topic:hover {
+  border-color: rgba(224,85,53,0.5);
+  color: var(--color-white);
+}

@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Mentors | Albanian Trailblazers</title>
+  <meta name="description" content="Meet the mentors behind Albanian Trailblazers — professionals from 20+ countries guiding the next generation of Albanian leaders.">
+
+  <meta property="og:title" content="Our Mentors | Albanian Trailblazers">
+  <meta property="og:description" content="Meet the mentors behind Albanian Trailblazers.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/mentors.css">
+</head>
+<body>
+
+  <!-- ========= NAVIGATION ========= -->
+  <nav class="nav scrolled" id="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__brand">
+        <span class="nav__logo" role="img" aria-label="Albanian Trailblazers logo"></span>
+        <span class="nav__name">Albanian Trailblazers</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="about.html" class="nav__link">Team</a></li>
+        <li class="nav__item--has-dropdown">
+          <button class="nav__link nav__dropdown-toggle" aria-expanded="false">Services <svg width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <ul class="nav__dropdown" role="menu">
+            <li><a href="mentors.html" role="menuitem">Mentorship</a></li>
+            <li><a href="workshops.html" role="menuitem">Workshops</a></li>
+            <li><a href="magazine.html" role="menuitem">The Albanian Trailblazers Magazine</a></li>
+            <li><a href="podcast.html" role="menuitem">The Albanian Trailblazers Podcast</a></li>
+          </ul>
+        </li>
+        <li class="nav__item--has-dropdown">
+          <button class="nav__link nav__dropdown-toggle" aria-expanded="false">Projects <svg width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <ul class="nav__dropdown" role="menu">
+            <li><a href="qemal.html" role="menuitem">Qemal</a></li>
+            <li><a href="porta.html" role="menuitem">PORTA</a></li>
+          </ul>
+        </li>
+        <li class="nav__item--has-dropdown">
+          <button class="nav__link nav__dropdown-toggle" aria-expanded="false">Apply <svg width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <ul class="nav__dropdown" role="menu">
+            <li><a href="apply-mentor.html" role="menuitem">Apply to be a Mentor</a></li>
+            <li><a href="apply-mentee.html" role="menuitem">Apply to be a Mentee</a></li>
+            <li><a href="jobs.html" role="menuitem">Open Positions</a></li>
+          </ul>
+        </li>
+        <li><a href="support.html" class="btn btn--ghost-red nav__support">Support Us</a></li>
+      </ul>
+      <button class="nav__hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="nav__overlay">
+      <a href="about.html" class="nav__overlay-link">Team</a>
+      <div class="nav__overlay-group">
+        <button class="nav__overlay-toggle">Services <svg width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="nav__overlay-sub">
+          <a href="mentors.html">Mentorship</a>
+          <a href="workshops.html">Workshops</a>
+          <a href="magazine.html">The Magazine</a>
+          <a href="podcast.html">The Podcast</a>
+        </div>
+      </div>
+      <div class="nav__overlay-group">
+        <button class="nav__overlay-toggle">Projects <svg width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="nav__overlay-sub">
+          <a href="qemal.html">Qemal</a>
+          <a href="porta.html">PORTA</a>
+        </div>
+      </div>
+      <div class="nav__overlay-group">
+        <button class="nav__overlay-toggle">Apply <svg width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="nav__overlay-sub">
+          <a href="apply-mentor.html">Apply to be a Mentor</a>
+          <a href="apply-mentee.html">Apply to be a Mentee</a>
+          <a href="jobs.html">Open Positions</a>
+        </div>
+      </div>
+      <a href="support.html" class="nav__overlay-link">Support Us</a>
+    </div>
+  </nav>
+
+  <!-- ========= HERO ========= -->
+  <section class="mentors-hero">
+    <div class="mentors-hero__grid" aria-hidden="true"></div>
+    <div class="container">
+      <h1 class="mentors-hero__title">Our Mentors</h1>
+      <p class="mentors-hero__subtitle">Professionals from world-class institutions dedicated to guiding the next generation of Albanian leaders.</p>
+      <div class="mentors-hero__stats">
+        <div class="mentors-hero__stat">
+          <span class="mentors-hero__stat-number">30</span>
+          <span class="mentors-hero__stat-label">Mentors</span>
+        </div>
+        <div class="mentors-hero__stat">
+          <span class="mentors-hero__stat-number">100%</span>
+          <span class="mentors-hero__stat-label">Free</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========= NOTICE BANNER ========= -->
+  <div class="container">
+    <div class="mentors-notice">
+      <div class="mentors-notice__icon">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M10 6v5M10 13.5v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <p>These are our mentors from previous cycles. We are currently recruiting our mentorship cohort for 2026.</p>
+    </div>
+  </div>
+
+  <!-- ========= FILTERS ========= -->
+  <section class="mentors-filters">
+    <div class="container">
+      <div class="mentors-filters__wrap">
+        <button class="mentors-filters__toggle" id="filterToggle">
+          Filter by field
+          <svg viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="mentors-filters__dropdown" id="filterDropdown">
+          <button class="mentors-filter active" data-filter="all">All</button>
+          <button class="mentors-filter" data-filter="accounting-finance">Accounting &amp; Finance</button>
+          <button class="mentors-filter" data-filter="biology-biotech">Biology &amp; Biotechnology</button>
+          <button class="mentors-filter" data-filter="business">Business Administration</button>
+          <button class="mentors-filter" data-filter="college-apps">College Applications</button>
+          <button class="mentors-filter" data-filter="fintech">FinTech</button>
+          <button class="mentors-filter" data-filter="hr-recruiting">HR &amp; Recruiting</button>
+          <button class="mentors-filter" data-filter="law">Law</button>
+          <button class="mentors-filter" data-filter="math-cs">Mathematics &amp; CS</button>
+          <button class="mentors-filter" data-filter="medicine">Medicine</button>
+          <button class="mentors-filter" data-filter="polisci">Political Science &amp; IA</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========= MENTOR GRID ========= -->
+  <section class="mentors-grid-section">
+    <div class="container">
+      <div class="mentors-grid">
+
+        <!-- Angie Zenuni -->
+        <div class="mentor-card" data-category="hr-recruiting">
+          <div class="mentor-card__image">
+            <img src="assets/images/mentors/old/angie-zenuni.png" alt="Angie Zenuni">
+          </div>
+          <div class="mentor-card__info">
+            <h3 class="mentor-card__name">Angie Zenuni</h3>
+            <p class="mentor-card__role">Senior Talent Acquisition Lead at Environmental Defense Fund</p>
+          </div>
+          <div class="mentor-card__bio">
+            <p>Angie is an HR professional with experience in various industries. Currently, she's a recruiter for an environmental non-profit and is drawn to mission driven organizations. She obtained her Bachelor's degree from Binghamton University, and her Master's from Georgetown University. She immigrated to NYC when she was 5, and is currently based in Brooklyn, NY. She hopes to provide mentorship to students looking for support with college/graduate school applications, as well as young professionals seeking career coaching and guidance.</p>
+          </div>
+        </div>
+
+        <!-- Arban Gjyzari -->
+        <div class="mentor-card" data-category="math-cs college-apps">
+          <div class="mentor-card__image">
+            <img src="assets/images/mentors/old/arban-gjyzari.avif" alt="Arban Gjyzari">
+          </div>
+          <div class="mentor-card__info">
+            <h3 class="mentor-card__name">Arban Gjyzari</h3>
+            <p class="mentor-card__role">Computer Science Student, Georgia Institute of Technology</p>
+          </div>
+          <div class="mentor-card__bio">
+            <p>Arban is a freshman studying Computer Science at Georgia Institute of Technology. His passion about technology and programming is reflected in both his academics and extracurricular involvement. As he recently went through the college application process himself, he is excited to help every prospective Albanian student accomplish their goals.</p>
+          </div>
+        </div>
+
+        <!-- Aridona Qakici -->
+        <div class="mentor-card" data-category="fintech accounting-finance">
+          <div class="mentor-card__image">
+            <img src="assets/images/mentors/old/aridona-qakici.jpg" alt="Aridona Qakici">
+          </div>
+          <div class="mentor-card__info">
+            <h3 class="mentor-card__name">Aridona Qakici</h3>
+            <p class="mentor-card__role">Master of Science in FinTech, Brandeis International Business School</p>
+          </div>
+          <div class="mentor-card__bio">
+            <p>Aridona graduated from Brandeis International Business School, earning a Master of Science degree with a concentration in FinTech. She has a strong interest in investments, technology, data science, and statistics. She completed her Bachelor's in Finance and Master's in Accounting in Shkoder, Albania. Aridona believes that making Albanian students aware of the vast opportunities available is a critical step towards a successful career.</p>
+          </div>
+        </div>
+
+        <!-- Arjana Kaba -->
+        <div class="mentor-card" data-category="biology-biotech">
+          <div class="mentor-card__image">
+            <img src="assets/images/mentors/old/arjana-kaba.avif" alt="Arjana Kaba">
+          </div>
+          <div class="mentor-card__info">
+            <h3 class="mentor-card__name">Arjana Kaba</h3>
+            <p class="mentor-card__role">Bioengineering Graduate, Rhine-Waal University of Applied Sciences</p>
+          </div>
+          <div class="mentor-card__bio">
+            <p>Arjana is a graduate of Rhine-Waal University of Applied Sciences, holding a degree in Bioengineering. With a strong academic and research background, she has gained hands-on experience in advanced analytical techniques through her thesis work. Arjana wants to inspire young Albanians to develop a passion for science and research, especially in bioengineering.</p>
+          </div>
+        </div>
+
+        <!-- Arlind Kamberi -->
+        <div class="mentor-card" data-category="medicine">
+          <div class="mentor-card__image">
+            <img src="assets/images/mentors/old/arlind-kamberi.jpg" alt="Arlind Kamberi">
+          </div>
+          <div class="mentor-card__info">
+            <h3 class="mentor-card__name">Arlind Kamberi</h3>
+            <p class="mentor-card__role">Medicine Student, Charit&eacute; Universit&auml;tsmedizin Berlin</p>
+          </div>
+          <div class="mentor-card__bio">
+            <p>Being a part of Charit&eacute; University in Berlin has allowed Arlind to gain profound knowledge in the field of medicine. Having gone through the challenging process of researching the right university and navigating the application process himself, he is passionate about giving back and helping aspiring students make informed decisions during their application journey.</p>
+          </div>
+        </div>
+
+        <!-- Darli Seranaj -->
+        <div class="mentor-card" data-category="math-cs accounting-finance">
+          <div class="mentor-card__image">
+            <img src="assets/images/mentors/old/darli-seranaj.jpeg" alt="Darli Seranaj">
+          </div>
+          <div class="mentor-card__info">
+            <h3 class="mentor-card__name">Darli Seranaj</h3>
+            <p class="mentor-card__role">Mathematics &amp; Computer Science Student, Duke University</p>
+          </div>
+          <div class="mentor-card__bio">
+            <p>Darli, a junior at Duke University, is pursuing a double major in Mathematics and Computer Science with a minor in Finance. He attended Aiglon College in Switzerland on a full scholarship and completed the International Baccalaureate program. He has experience in mentoring as a Teaching Assistant and is currently working as a research assistant on two data-related projects. He is excited about mentoring young aspiring Albanian students.</p>
+          </div>
+        </div>
+
+        <!-- Denis Lalaj -->
+        <div class="mentor-card" data-category="math-cs">
+          <div class="mentor-card__image">
+            <img src="assets/images/mentors/old/denis-lalaj.avif" alt="Denis Lalaj">
+          </div>
+          <div class="mentor-card__info">
+            <h3 class="mentor-card__name">Denis Lalaj</h3>
+            <p class="mentor-card__role">Computer Engineering Student, University of British Columbia</p>
+          </div>
+          <div class="mentor-card__bio">
+            <p>Denis is currently pursuing a Bachelor of Applied Science in Computer Engineering at the University of British Columbia (UBC), where his passion for technology shines through. With a stellar academic background and a deep understanding of his field, he brings invaluable expertise to our mentorship program.</p>
+          </div>
+        </div>
+
+        <!-- Dorentina Humolli -->
+        <div class="mentor-card" data-category="biology-biotech">
+          <div class="mentor-card__image">
+            <img src="assets/images/mentors/old/dorentina-humolli.avif" alt="Dorentina Humolli">
+          </div>
+          <div class="mentor-card__info">
+            <h3 class="mentor-card__name">Dorentina Humolli</h3>
+            <p class="mentor-card__role">PhD Student, ETH Z&uuml;rich</p>
+          </div>
+          <div class="mentor-card__bio">
+            <p>Dorentina is pursuing her PhD at ETH Zurich, researching the biology of bacteriophages and their potential applications in clinics and biotechnology. Born and raised in Kosova, she understands the unique challenges that Albanian students face, especially in STEM fields. She&rsquo;s here to share her journey and offer practical advice.</p>
+          </div>
+        </div>
+
+        <!-- Edera Dibra -->
+        <div class="mentor-card" data-category="business polisci">
+          <div class="mentor-card__image">
+            <img src="assets/images/mentors/old/edera-dibra.avif" alt="Edera Dibra">
+          </div>
+          <div class="mentor-card__info">
+            <h3 class="mentor-card__name">Edera Dibra</h3>
+            <p class="mentor-card__role">International Business Student, Baruch College</p>
+          </div>
+          <div class="mentor-card__bio">
+            <p>Edera is a senior at Baruch College, pursuing a Bachelor of Business Administration with a major in International Business, concentrating in Finance, and a minor in Political Science. Deeply passionate about driving meaningful change on a global scale, she is currently completing her second term as an intern with UNICEF USA.</p>
+          </div>
+        </div>
+
+        <!-- Egzona Morina -->
+        <div class="mentor-card" data-category="biology-biotech medicine">
+          <div class="mentor-card__image">
+            <img src="assets/images/mentors/old/egzona-morina.avif" alt="Egzona Morina">
+          </div>
+          <div class="mentor-card__info">
+            <h3 class="mentor-card__name">Egzona Morina</h3>
+            <p class="mentor-card__role">Lecturer / Postdoctoral Associate, Harvard University</p>
+          </div>
+          <div class="mentor-card__bio">
+            <p>Egzona is a neuroscientist who earned her master&rsquo;s at Columbia University, worked at NYU, and earned her PhD in neuroscience at University College London. She completed a postdoc at MIT&rsquo;s Digital Learning lab and is currently moving into environmental neuroscience at Harvard Medical School. She also founded the Xheladin and Xhufe Morina Foundation to promote STEM education for students in Kosovo.</p>
+          </div>
+        </div>
+
+        <!-- Elisa Stefani -->
+        <div class="mentor-card" data-category="polisci">
+          <div class="mentor-card__image">
+            <img src="assets/images/mentors/old/elisa-stefani.avif" alt="Elisa Stefani">
+          </div>
+          <div class="mentor-card__info">
+            <h3 class="mentor-card__name">Elisa Stefani</h3>
+            <p class="mentor-card__role">Master of International Affairs Student, Columbia University</p>
+          </div>
+          <div class="mentor-card__bio">
+            <p>Elisa is pursuing a Master of International Affairs at Columbia University, specializing in Economic and Political Development. With a strong background in public service, including her role with the New York Immigration Coalition, she has developed expertise in grant management, policy development, and community support. She is passionate about advancing social justice and fostering international collaboration.</p>
+          </div>
+        </div>
+
+        <!-- Emel Tabaku -->
+        <div class="mentor-card" data-category="polisci">
+          <div class="mentor-card__image">
+            <img src="assets/images/mentors/old/emel-tabaku.jpeg" alt="Emel Tabaku">
+          </div>
+          <div class="mentor-card__info">
+            <h3 class="mentor-card__name">Emel Tabaku</h3>
+            <p class="mentor-card__role">Junior Policy Analyst, Public Safety Canada</p>
+          </div>
+          <div class="mentor-card__bio">
+            <p>Emel is a Master of Public Policy Candidate at the University of Toronto and holds a BFA from OCAD University. She is the Founder and Executive Director of RCAD Initiative, an NGO that empowers underrepresented youth through storytelling mentorship and entrepreneurial skills training. Emel has served as a Junior Consultant with UNDP Accelerator Labs Indonesia.</p>
+          </div>
+        </div>
+
+        <!-- Erdi Mehaj -->
+        <div class="mentor-card" data-category="accounting-finance">
+          <div class="mentor-card__image">
+            <img src="assets/images/mentors/old/erdi-mehaj.jpg" alt="Erdi Mehaj">
+          </div>
+          <div class="mentor-card__info">
+            <h3 class="mentor-card__name">Erdi Mehaj</h3>
+            <p class="mentor-card__role">Accounting &amp; Finance Student, University of East London</p>
+          </div>
+          <div class="mentor-card__bio">
+            <p>Erdi is in the final year of his undergraduate studies, pursuing a bachelor&rsquo;s degree in Accounting and Finance. His passion and curiosity for the discipline drive him to engage in extensive study and exploration. His professional involvement in the financial services industry enhances his ability to be a strong mentor.</p>
+          </div>
+        </div>
+
+        <!-- Ersilda Çako -->
+        <div class="mentor-card" data-category="math-cs">
+          <div class="mentor-card__image">
+            <img src="assets/images/mentors/old/ersilda-cako.avif" alt="Ersilda Çako">
+          </div>
+          <div class="mentor-card__info">
+            <h3 class="mentor-card__name">Ersilda &Ccedil;ako</h3>
+            <p class="mentor-card__role">President of Computing Club, University of Maine</p>
+          </div>
+          <div class="mentor-card__bio">
+            <p>Ersi is a senior at the University of Maine pursuing Computer Science. She has gained experience as a developer and researcher in labs such as VEMI and PERC, and completed internships with Labcorp and Black Bear Consulting Corps. She serves as a Resident Assistant and President of the Computing Club. She believes that with the right resources and support, anyone can succeed in any field.</p>
+          </div>
+        </div>
+
+        <!-- Eugerta Avdulaj -->
+        <div class="mentor-card" data-category="medicine">
+          <div class="mentor-card__image">
+            <img src="assets/images/mentors/old/eugerta-avdulaj.jpg" alt="Eugerta Avdulaj">
+          </div>
+          <div class="mentor-card__info">
+            <h3 class="mentor-card__name">Eugerta Avdulaj</h3>
+            <p class="mentor-card__role">Medical Doctor, Future Resident, Washington DC</p>
+          </div>
+          <div class="mentor-card__bio">
+            <p>As a medical doctor and future Resident based in Washington DC, Eugerta has witnessed the unique challenges that Albanian medical students encounter. Having experienced similar hurdles during her educational journey, she is passionate about providing guidance and support to aspiring medical professionals in Albania.</p>
+          </div>
+        </div>
+
+        <!-- Fabio Hodo -->
+        <div class="mentor-card" data-category="math-cs accounting-finance">
+          <div class="mentor-card__image">
+            <img src="assets/images/mentors/old/fabio-hodo.avif" alt="Fabio Hodo">
+          </div>
+          <div class="mentor-card__info">
+            <h3 class="mentor-card__name">Fabio Hodo</h3>
+            <p class="mentor-card__role">Operations Research Graduate, Columbia University</p>
+          </div>
+          <div class="mentor-card__bio">
+            <p>Born and raised in Tirana, Fabio moved to the US for university — first at the University of Minnesota to study Aerospace Engineering, then to New York to study Operations Research and Financial Engineering at Columbia. Interested in all things math and finance.</p>
+          </div>
+        </div>
+
+        <!-- Florjan Plepi -->
+        <div class="mentor-card" data-category="business">
+          <div class="mentor-card__image">
+            <img src="assets/images/mentors/old/florjan-plepi.avif" alt="Florjan Plepi">
+          </div>
+          <div class="mentor-card__info">
+            <h3 class="mentor-card__name">Florjan Plepi</h3>
+            <p class="mentor-card__role">Junior Architect, Spitzer School of Architecture Graduate</p>
+          </div>
+          <div class="mentor-card__bio">
+            <p>As a graduate of the Spitzer School of Architecture with extensive experience in project management and construction, Florjan is currently working as a Junior Architect while pursuing his passion for real estate development in New York City. His goal is to pursue a Master&rsquo;s in Real Estate Development.</p>
+          </div>
+        </div>
+
+        <!-- Jessica Plepi -->
+        <div class="mentor-card" data-category="law polisci">
+          <div class="mentor-card__image">
+            <img src="assets/images/mentors/old/jessica-plepi.avif" alt="Jessica Plepi">
+          </div>
+          <div class="mentor-card__info">
+            <h3 class="mentor-card__name">Jessica Plepi</h3>
+            <p class="mentor-card__role">Political Science Student, Baruch College</p>
+          </div>
+          <div class="mentor-card__bio">
+            <p>Jessica is a senior at Baruch College majoring in Political Science, also pursuing a Social Justice certificate at Harvard Extension School. She aims to attend law school and become a corporate lawyer. As a legal fellow in Barcelona and Lyon, she gained experience across 18+ areas of law. Born in New York with roots in Shkoder, she is committed to supporting young Albanians.</p>
+          </div>
+        </div>
+
+        <!-- Kristel Tupja -->
+        <div class="mentor-card" data-category="law">
+          <div class="mentor-card__image">
+            <img src="assets/images/mentors/old/kristel-tupja.jpg" alt="Kristel Tupja">
+          </div>
+          <div class="mentor-card__info">
+            <h3 class="mentor-card__name">Kristel Tupja Barnett, Esq.</h3>
+            <p class="mentor-card__role">Senior Legal Counsel, Audacy</p>
+          </div>
+          <div class="mentor-card__bio">
+            <p>Kristel is a media and entertainment attorney for Audacy. She obtained her Bachelor&rsquo;s from Suffolk University and her Juris Doctor from William &amp; Mary Law School. She immigrated to Boston when she was 5, and was the first in her family to apply to college and law school outside of Albania. She hopes to provide mentorship to students looking to attend college and graduate school.</p>
+          </div>
+        </div>
+
+        <!-- Livia Dyrmishi -->
+        <div class="mentor-card" data-category="business college-apps">
+          <div class="mentor-card__image">
+            <img src="assets/images/mentors/old/livia-dyrmishi.jpg" alt="Livia Dyrmishi">
+          </div>
+          <div class="mentor-card__info">
+            <h3 class="mentor-card__name">Livia Dyrmishi</h3>
+            <p class="mentor-card__role">Business Administration Student, Budapest Business School</p>
+          </div>
+          <div class="mentor-card__bio">
+            <p>Livia is studying Business Administration and Management at Budapest Business School on the Stipendium Hungaricum scholarship. She experienced first-hand how hard it is to look for the right school and apply for opportunities, so she would love to help out and give advice to young students starting the application process.</p>
+          </div>
+        </div>
+
+        <!-- Marjana Ndoci -->
+        <div class="mentor-card" data-category="biology-biotech">
+          <div class="mentor-card__image">
+            <img src="assets/images/mentors/old/marjana-ndoci.jpeg" alt="Marjana Ndoci">
+          </div>
+          <div class="mentor-card__info">
+            <h3 class="mentor-card__name">Marjana Ndoci</h3>
+            <p class="mentor-card__role">Research Assistant, Max Planck Institute for Biology of Ageing</p>
+          </div>
+          <div class="mentor-card__bio">
+            <p>Marjana is a graduate of the University of Ioannina, holding a master&rsquo;s degree in biology. Currently working at the MPI for Biology of Ageing, she has earned a position at Harvard University for her PhD studies. She is eager to assist fellow Albanians in navigating and discovering opportunities to help them reach their goals.</p>
+          </div>
+        </div>
+
+        <!-- Marsida Stafa -->
+        <div class="mentor-card" data-category="medicine">
+          <div class="mentor-card__image">
+            <img src="assets/images/mentors/old/marsida-stafa.avif" alt="Marsida Stafa">
+          </div>
+          <div class="mentor-card__info">
+            <h3 class="mentor-card__name">Marsida Stafa</h3>
+            <p class="mentor-card__role">Research Assistant in Clinical Trials, WCH and UHN, Toronto</p>
+          </div>
+          <div class="mentor-card__bio">
+            <p>Marsida earned her MD degree in 2012 in Albania and worked as a Family Doctor for three years. Since 2019, she has been living in Toronto, working as a Research Assistant in clinical trials at Women&rsquo;s College Hospital and the University Health Network. Her goal is to become a Family Doctor or Internist in Canada.</p>
+          </div>
+        </div>
+
+        <!-- Meleq Hoxhaj -->
+        <div class="mentor-card" data-category="accounting-finance business">
+          <div class="mentor-card__image">
+            <img src="assets/images/mentors/old/meleq-hoxhaj.avif" alt="Meleq Hoxhaj">
+          </div>
+          <div class="mentor-card__info">
+            <h3 class="mentor-card__name">Meleq Hoxhaj</h3>
+            <p class="mentor-card__role">Economist and Researcher</p>
+          </div>
+          <div class="mentor-card__bio">
+            <p>Meleq is an economist and researcher with over 5 years of experience in economic analysis and research. His work focuses on market trends, policy development, and identifying opportunities for economic improvement. He has published extensively on Albania&rsquo;s economy, covering topics such as foreign direct investment, tax compliance, and labour market trends.</p>
+          </div>
+        </div>
+
+        <!-- Mirjeta Pasha -->
+        <div class="mentor-card" data-category="math-cs">
+          <div class="mentor-card__image">
+            <img src="assets/images/mentors/old/mirjeta-pasha.avif" alt="Mirjeta Pasha">
+          </div>
+          <div class="mentor-card__info">
+            <h3 class="mentor-card__name">Mirjeta Pasha</h3>
+            <p class="mentor-card__role">Assistant Professor, Virginia Tech</p>
+          </div>
+          <div class="mentor-card__bio">
+            <p>Dr. Mirjeta Pasha is an Assistant Professor of Data and High-Performance Computational Mathematics at Virginia Tech. Her research focuses on high-dimensional data analysis, inverse problems, and high-performance computing. Before Virginia Tech, she was a National Science Foundation Postdoctoral Fellow at MIT and Tufts University. She earned her PhD from Kent State University and completed her undergraduate studies at the University of Tirana.</p>
+          </div>
+        </div>
+
+        <!-- Ruel Domi -->
+        <div class="mentor-card" data-category="accounting-finance polisci">
+          <div class="mentor-card__image">
+            <img src="assets/images/mentors/old/ruel-domi.jpeg" alt="Ruel Domi">
+          </div>
+          <div class="mentor-card__info">
+            <h3 class="mentor-card__name">Ruel Domi</h3>
+            <p class="mentor-card__role">Finance &amp; Political Science Student, Concordia College</p>
+          </div>
+          <div class="mentor-card__bio">
+            <p>Ruel is a Concordia College student double-majoring in Finance and Political Science. He has been involved in The Scheel Fund, Mock Trial, and Student Government. He interned at a law firm and at the Central Bank of Albania, and completed a Virtual Insights Series Program with Goldman Sachs. As a mentor, he hopes to assist Albanian students in Albania and abroad.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========= FOOTER ========= -->
+  <footer class="footer" id="footer">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <div class="footer__brand">
+          <span class="footer__logo" role="img" aria-label="Albanian Trailblazers logo"></span>
+          <span class="footer__brand-name">Albanian Trailblazers</span>
+        </div>
+        <p class="footer__copyright">&copy; <span class="footer__year"></span> Albanian Trailblazers. All rights reserved.</p>
+        <p class="footer__location">Toronto, Ontario, Canada</p>
+      </div>
+      <nav class="footer__nav">
+        <div class="footer__nav-group">
+          <span class="footer__nav-label">Services</span>
+          <a href="mentors.html">Mentorship</a>
+          <a href="workshops.html">Workshops</a>
+          <a href="magazine.html">Magazine</a>
+          <a href="podcast.html">Podcast</a>
+        </div>
+        <div class="footer__nav-group">
+          <span class="footer__nav-label">Projects</span>
+          <a href="qemal.html">Qemal</a>
+          <a href="porta.html">PORTA</a>
+        </div>
+        <div class="footer__nav-group">
+          <span class="footer__nav-label">Apply</span>
+          <a href="apply-mentor.html">Be a Mentor</a>
+          <a href="apply-mentee.html">Be a Mentee</a>
+          <a href="jobs.html">Open Positions</a>
+        </div>
+      </nav>
+      <div class="footer__social">
+        <div class="footer__social-icons">
+          <a href="https://www.instagram.com/albanian_trailblazers/" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5Zm4.25 3.25a5.25 5.25 0 1 1 0 10.5 5.25 5.25 0 0 1 0-10.5Zm0 1.5a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5Zm5.5-1.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/albanian-trailblazers/" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.47 2H3.53A1.45 1.45 0 0 0 2 3.38v17.24A1.45 1.45 0 0 0 3.53 22h16.94A1.45 1.45 0 0 0 22 20.62V3.38A1.45 1.45 0 0 0 20.47 2ZM8.09 18.74H5.13V9.72h2.96ZM6.6 8.48a1.72 1.72 0 1 1 0-3.43 1.72 1.72 0 0 1 0 3.43Zm12.14 10.26h-2.96v-4.83c0-1.21-.44-2.04-1.54-2.04a1.65 1.65 0 0 0-1.55 1.09 2 2 0 0 0-.1.73v5.05h-2.96V9.72h2.96v1.27a2.92 2.92 0 0 1 2.66-1.46c1.94 0 3.49 1.27 3.49 3.99Z"/></svg>
+          </a>
+          <a href="https://youtube.com/@albaniantrailblazers" aria-label="YouTube" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.54 3.5 12 3.5 12 3.5s-7.54 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14c1.84.55 9.38.55 9.38.55s7.54 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.81ZM9.54 15.57V8.43L15.82 12Z"/></svg>
+          </a>
+        </div>
+        <p class="footer__email"><a href="mailto:info@albaniantrailblazers.com">info@albaniantrailblazers.com</a></p>
+      </div>
+    </div>
+    <div class="container">
+      <p class="footer__bottom">Built with care by the Albanian Trailblazers team.</p>
+    </div>
+  </footer>
+
+  <!-- ========= BIO MODAL ========= -->
+  <div class="mentor-modal" id="mentorModal" aria-hidden="true">
+    <div class="mentor-modal__backdrop" id="mentorModalBackdrop"></div>
+    <div class="mentor-modal__panel" role="dialog" aria-modal="true">
+      <button class="mentor-modal__close" id="mentorModalClose" aria-label="Close">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1l12 12M13 1L1 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <div class="mentor-modal__photo">
+        <img id="mentorModalImg" src="" alt="">
+      </div>
+      <div class="mentor-modal__content">
+        <div class="mentor-modal__tags" id="mentorModalTags"></div>
+        <h2 class="mentor-modal__name" id="mentorModalName"></h2>
+        <p class="mentor-modal__role" id="mentorModalRole"></p>
+        <p class="mentor-modal__bio" id="mentorModalBio"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/mentors.js"></script>
+</body>
+</html>

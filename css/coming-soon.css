@@ -1,0 +1,166 @@
+/* ========= COMING SOON PAGES ========= */
+
+/* Force dark body for these pages */
+.page--dark {
+  background: var(--color-void);
+}
+
+/* ========= HERO ========= */
+.coming-hero {
+  position: relative;
+  background: var(--color-void);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Red radial glow at the top — matches mentors hero style */
+.coming-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 55% at 50% -5%, rgba(224,85,53,0.20) 0%, transparent 65%);
+  pointer-events: none;
+}
+
+/* Subtle bottom vignette */
+.coming-hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background: linear-gradient(to top, rgba(21,19,14,0.5), transparent);
+  pointer-events: none;
+}
+
+/* Very faint grid texture for depth */
+.coming-hero__grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.017) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.017) 1px, transparent 1px);
+  background-size: 64px 64px;
+  pointer-events: none;
+  -webkit-mask-image: radial-gradient(ellipse 75% 75% at 50% 50%, black 20%, transparent 100%);
+  mask-image: radial-gradient(ellipse 75% 75% at 50% 50%, black 20%, transparent 100%);
+}
+
+.coming-hero__inner {
+  position: relative;
+  z-index: 2;
+  max-width: 740px;
+  padding: 180px 28px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* "In Development" label with flanking lines */
+.coming-hero__label {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--color-red);
+  margin-bottom: 28px;
+}
+
+.coming-hero__label::before,
+.coming-hero__label::after {
+  content: '';
+  display: block;
+  width: 36px;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.45;
+}
+
+/* Acronym full name — shown beneath the short title (e.g. PORTA) */
+.coming-hero__fullname {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.28);
+  letter-spacing: 0.03em;
+  margin-top: -14px;
+  margin-bottom: 32px;
+  max-width: 480px;
+  line-height: 1.5;
+}
+
+/* Main title */
+.coming-hero__title {
+  font-size: clamp(3.25rem, 9vw, 6rem);
+  font-weight: 700;
+  color: var(--color-white);
+  letter-spacing: -0.04em;
+  line-height: 1.02;
+  margin-bottom: 28px;
+}
+
+/* Description paragraph */
+.coming-hero__desc {
+  font-size: 1.125rem;
+  color: rgba(255,255,255,0.42);
+  line-height: 1.8;
+  max-width: 580px;
+  margin: 0 auto 44px;
+}
+
+/* Animated status pill */
+.coming-hero__status {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 100px;
+  padding: 12px 22px;
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.45);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  margin-bottom: 52px;
+}
+
+/* Pulsing live dot */
+.coming-hero__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-red);
+  box-shadow: 0 0 12px rgba(224,85,53,0.6);
+  flex-shrink: 0;
+  animation: dot-pulse 2.4s ease-in-out infinite;
+}
+
+@keyframes dot-pulse {
+  0%, 100% { opacity: 1; box-shadow: 0 0 12px rgba(224,85,53,0.6); }
+  50%       { opacity: 0.45; box-shadow: 0 0 4px rgba(224,85,53,0.2); }
+}
+
+/* Back to Home link */
+.coming-hero__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.28);
+  transition: color 0.2s;
+  letter-spacing: 0.01em;
+}
+
+.coming-hero__back:hover {
+  color: rgba(255,255,255,0.65);
+}

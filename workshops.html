@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workshops | Albanian Trailblazers</title>
+  <meta name="description" content="Albanian Trailblazers workshops — live sessions with Albanian professionals covering professional skills, STEM, career development, and more.">
+
+  <meta property="og:title" content="Workshops | Albanian Trailblazers">
+  <meta property="og:description" content="Hands-on sessions with Albanian professionals and academics bringing real skills to the next generation.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/workshops.css">
+</head>
+<body>
+
+  <!-- ========= NAVIGATION ========= -->
+  <nav class="nav scrolled" id="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__brand">
+        <span class="nav__logo" role="img" aria-label="Albanian Trailblazers logo"></span>
+        <span class="nav__name">Albanian Trailblazers</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="about.html" class="nav__link">Team</a></li>
+        <li class="nav__item--has-dropdown">
+          <button class="nav__link nav__dropdown-toggle" aria-expanded="false">Services <svg width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <ul class="nav__dropdown" role="menu">
+            <li><a href="mentors.html" role="menuitem">Mentorship</a></li>
+            <li><a href="workshops.html" role="menuitem">Workshops</a></li>
+            <li><a href="magazine.html" role="menuitem">The Albanian Trailblazers Magazine</a></li>
+            <li><a href="podcast.html" role="menuitem">The Albanian Trailblazers Podcast</a></li>
+          </ul>
+        </li>
+        <li class="nav__item--has-dropdown">
+          <button class="nav__link nav__dropdown-toggle" aria-expanded="false">Projects <svg width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <ul class="nav__dropdown" role="menu">
+            <li><a href="qemal.html" role="menuitem">Qemal</a></li>
+            <li><a href="porta.html" role="menuitem">PORTA</a></li>
+          </ul>
+        </li>
+        <li class="nav__item--has-dropdown">
+          <button class="nav__link nav__dropdown-toggle" aria-expanded="false">Apply <svg width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <ul class="nav__dropdown" role="menu">
+            <li><a href="apply-mentor.html" role="menuitem">Apply to be a Mentor</a></li>
+            <li><a href="apply-mentee.html" role="menuitem">Apply to be a Mentee</a></li>
+            <li><a href="jobs.html" role="menuitem">Open Positions</a></li>
+          </ul>
+        </li>
+        <li><a href="support.html" class="btn btn--ghost-red nav__support">Support Us</a></li>
+      </ul>
+      <button class="nav__hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="nav__overlay">
+      <a href="about.html" class="nav__overlay-link">Team</a>
+      <div class="nav__overlay-group">
+        <button class="nav__overlay-toggle">Services <svg width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="nav__overlay-sub">
+          <a href="mentors.html">Mentorship</a>
+          <a href="workshops.html">Workshops</a>
+          <a href="magazine.html">The Magazine</a>
+          <a href="podcast.html">The Podcast</a>
+        </div>
+      </div>
+      <div class="nav__overlay-group">
+        <button class="nav__overlay-toggle">Projects <svg width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="nav__overlay-sub">
+          <a href="qemal.html">Qemal</a>
+          <a href="porta.html">PORTA</a>
+        </div>
+      </div>
+      <div class="nav__overlay-group">
+        <button class="nav__overlay-toggle">Apply <svg width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="nav__overlay-sub">
+          <a href="apply-mentor.html">Apply to be a Mentor</a>
+          <a href="apply-mentee.html">Apply to be a Mentee</a>
+          <a href="jobs.html">Open Positions</a>
+        </div>
+      </div>
+      <a href="support.html" class="nav__overlay-link">Support Us</a>
+    </div>
+  </nav>
+
+  <!-- ========= HERO ========= -->
+  <section class="workshops-hero">
+    <div class="workshops-hero__grid" aria-hidden="true"></div>
+    <div class="container">
+      <div class="workshops-hero__inner">
+        <p class="section-label">Workshops</p>
+        <h1 class="workshops-hero__title">Real people.<br><span>Real skills.</span></h1>
+        <p class="workshops-hero__sub">Hands-on sessions with Albanian professionals and academics bringing real knowledge to the next generation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========= PAST WORKSHOPS ========= -->
+  <section class="workshops-past">
+    <div class="container">
+      <p class="section-label">Past Workshops</p>
+
+      <div class="workshops-list">
+
+        <!-- Homecoming Symposium -->
+        <div class="workshop-featured">
+          <div class="workshop-featured__text">
+            <span class="workshop-badge">
+              <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M8 1.5C5.515 1.5 3.5 3.515 3.5 6c0 3.75 4.5 8.5 4.5 8.5s4.5-4.75 4.5-8.5c0-2.485-2.015-4.5-4.5-4.5Zm0 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z" fill="currentColor"/></svg>
+              In-Person Event
+            </span>
+            <h2 class="workshop-featured__title">Albanian Trailblazers<br>Homecoming Symposium</h2>
+            <p class="workshop-featured__desc">Harvard, MIT, Yale, and Oxford all in one room. Two afternoons of panel discussions, a keynote by Zana Buçinca (Incoming Assistant Professor at MIT), success stories, and networking with exceptional Albanians from around the world.</p>
+            <div class="workshop-featured__locations">
+              <div class="workshop-featured__loc">
+                <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M8 1.5C5.515 1.5 3.5 3.515 3.5 6c0 3.75 4.5 8.5 4.5 8.5s4.5-4.75 4.5-8.5c0-2.485-2.015-4.5-4.5-4.5Zm0 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z" fill="currentColor"/></svg>
+                <div>
+                  <div class="workshop-featured__loc-name">Tiranë — University of New York</div>
+                  <div class="workshop-featured__loc-date">August 15, 2024 · 3 PM</div>
+                </div>
+              </div>
+              <div class="workshop-featured__loc">
+                <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M8 1.5C5.515 1.5 3.5 3.515 3.5 6c0 3.75 4.5 8.5 4.5 8.5s4.5-4.75 4.5-8.5c0-2.485-2.015-4.5-4.5-4.5Zm0 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z" fill="currentColor"/></svg>
+                <div>
+                  <div class="workshop-featured__loc-name">Shkodër — "Marin Barleti" Library</div>
+                  <div class="workshop-featured__loc-date">August 16, 2024 · 3 PM</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="workshop-featured__photo">
+            <img src="assets/workshops/event-workshop-tirana-audience.webp" alt="Albanian Trailblazers Homecoming Symposium, Tiranë 2024">
+          </div>
+        </div>
+
+        <!-- Data Science x DAIT -->
+        <div class="workshop-featured workshop-featured--reverse">
+          <div class="workshop-featured__text">
+            <span class="workshop-badge">
+              <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              Online Lecture
+            </span>
+            <h2 class="workshop-featured__title">So You Want to Become a Data Scientist?</h2>
+            <p class="workshop-featured__desc">A collaboration with DAIT (Data and AI Tirana) covering the mathematical foundations of data science — linear algebra, vector calculus, and probability — taught by three of our own.</p>
+            <p class="workshop-featured__date">January 29, 2025 · Albanian Trailblazers × DAIT</p>
+            <a href="https://www.youtube.com/watch?v=AtJ9HQLL3lk" class="workshop-featured__link" target="_blank" rel="noopener">
+              Watch Recording
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+          <div class="workshop-featured__photo">
+            <img src="assets/workshops/data-science-workshop.webp" alt="AT x DAIT Data Science Workshop, January 2025">
+          </div>
+        </div>
+
+        <!-- Empowering Albanian Futures -->
+        <div class="workshop-featured">
+          <div class="workshop-featured__text">
+            <span class="workshop-badge">
+              <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M8 1.5a6.5 6.5 0 1 1 0 13 6.5 6.5 0 0 1 0-13Zm0 3v3.5l2.5 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Webinar
+            </span>
+            <h2 class="workshop-featured__title">Empowering Albanian Futures</h2>
+            <p class="workshop-featured__desc">Our inaugural webinar. Panelists Kristel Tupja Barnett, Arlind Kamberi, and Erka Tana shared their journeys and gave insights from their respective fields — sparking a conversation that was professional, warm, and memorable.</p>
+            <p class="workshop-featured__date">October 2023 · From Beginnings to Achievements</p>
+            <a href="https://mit.zoom.us/rec/share/59JBL5dxt4sMVTzMBoN9AjusTHYhnLhHRR0gC232ejftjaAObQ2jOY4qE1ms1KvN.YIk1uOTdAWP6tTbr" class="workshop-featured__link" target="_blank" rel="noopener">
+              Watch Recording
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+          <div class="workshop-featured__photo">
+            <img src="assets/workshops/empowering-albanians-workshop.avif" alt="Empowering Albanian Futures Webinar, October 2023">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========= COMING UP ========= -->
+  <section class="workshops-coming">
+    <div class="container">
+      <div class="workshops-coming__inner">
+        <p class="section-label">On the Horizon</p>
+        <h2 class="workshops-coming__title">More sessions<br>in the works.</h2>
+        <p class="workshops-coming__desc">We're planning a new series of workshops — bringing Albanian experts to students wherever they are. Expect sessions across professional development, STEM, and beyond.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========= FOOTER ========= -->
+  <footer class="footer" id="footer">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <div class="footer__brand">
+          <span class="footer__logo" role="img" aria-label="Albanian Trailblazers logo"></span>
+          <span class="footer__brand-name">Albanian Trailblazers</span>
+        </div>
+        <p class="footer__copyright">&copy; <span class="footer__year"></span> Albanian Trailblazers. All rights reserved.</p>
+        <p class="footer__location">Toronto, Ontario, Canada</p>
+      </div>
+      <nav class="footer__nav">
+        <div class="footer__nav-group">
+          <span class="footer__nav-label">Services</span>
+          <a href="mentors.html">Mentorship</a>
+          <a href="workshops.html">Workshops</a>
+          <a href="magazine.html">Magazine</a>
+          <a href="podcast.html">Podcast</a>
+        </div>
+        <div class="footer__nav-group">
+          <span class="footer__nav-label">Projects</span>
+          <a href="qemal.html">Qemal</a>
+          <a href="porta.html">PORTA</a>
+        </div>
+        <div class="footer__nav-group">
+          <span class="footer__nav-label">Apply</span>
+          <a href="apply-mentor.html">Be a Mentor</a>
+          <a href="apply-mentee.html">Be a Mentee</a>
+          <a href="jobs.html">Open Positions</a>
+        </div>
+      </nav>
+      <div class="footer__social">
+        <div class="footer__social-icons">
+          <a href="https://www.instagram.com/albanian_trailblazers/" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5Zm4.25 3.25a5.25 5.25 0 1 1 0 10.5 5.25 5.25 0 0 1 0-10.5Zm0 1.5a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5Zm5.5-1.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/albanian-trailblazers/" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.47 2H3.53A1.45 1.45 0 0 0 2 3.38v17.24A1.45 1.45 0 0 0 3.53 22h16.94A1.45 1.45 0 0 0 22 20.62V3.38A1.45 1.45 0 0 0 20.47 2ZM8.09 18.74H5.13V9.72h2.96ZM6.6 8.48a1.72 1.72 0 1 1 0-3.43 1.72 1.72 0 0 1 0 3.43Zm12.14 10.26h-2.96v-4.83c0-1.21-.44-2.04-1.54-2.04a1.65 1.65 0 0 0-1.55 1.09 2 2 0 0 0-.1.73v5.05h-2.96V9.72h2.96v1.27a2.92 2.92 0 0 1 2.66-1.46c1.94 0 3.49 1.27 3.49 3.99Z"/></svg>
+          </a>
+          <a href="https://youtube.com/@albaniantrailblazers" aria-label="YouTube" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.54 3.5 12 3.5 12 3.5s-7.54 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14c1.84.55 9.38.55 9.38.55s7.54 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.81ZM9.54 15.57V8.43L15.82 12Z"/></svg>
+          </a>
+        </div>
+        <p class="footer__email"><a href="mailto:info@albaniantrailblazers.com">info@albaniantrailblazers.com</a></p>
+      </div>
+    </div>
+    <div class="container">
+      <p class="footer__bottom">Built with care by the Albanian Trailblazers team.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

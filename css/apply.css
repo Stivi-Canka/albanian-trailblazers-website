@@ -1,0 +1,210 @@
+/* ========= APPLY PAGES (mentee + mentor) ========= */
+
+/* ── Hero (dark) ── */
+.apply-hero {
+  position: relative;
+  background: var(--color-void);
+  padding: 130px 0 72px;
+  overflow: hidden;
+}
+
+.apply-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 55% at 50% -5%, rgba(224,85,53,0.20) 0%, transparent 65%);
+  pointer-events: none;
+}
+
+.apply-hero__grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.017) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.017) 1px, transparent 1px);
+  background-size: 64px 64px;
+  pointer-events: none;
+  -webkit-mask-image: radial-gradient(ellipse 75% 75% at 50% 50%, black 20%, transparent 100%);
+  mask-image: radial-gradient(ellipse 75% 75% at 50% 50%, black 20%, transparent 100%);
+}
+
+.apply-hero__inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 56px;
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  .apply-hero__inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 72px;
+  }
+}
+
+/* Left — text */
+.apply-hero__title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(2.5rem, 5vw, 3.75rem);
+  font-weight: 700;
+  color: var(--color-white);
+  letter-spacing: -0.03em;
+  line-height: 1.08;
+  margin: 14px 0 22px;
+}
+
+.apply-hero__title--long {
+  font-size: clamp(1.75rem, 2.6vw, 2.25rem);
+}
+
+.apply-hero__title span {
+  color: var(--color-red);
+}
+
+.apply-hero__sub {
+  font-size: 1.0625rem;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.65;
+  margin-bottom: 36px;
+  max-width: 460px;
+}
+
+.apply-hero__cta {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  padding: 16px 44px;
+  letter-spacing: -0.01em;
+  box-shadow: 0 8px 32px rgba(224,85,53,0.35);
+}
+
+/* Right — stat grid (2×2, mentee) */
+.apply-hero__facts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.apply-hero__fact {
+  background: rgba(255,255,255,0.04);
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.apply-hero__fact-num {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-white);
+  letter-spacing: -0.04em;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.apply-hero__fact-num span {
+  color: var(--color-red);
+}
+
+.apply-hero__fact-label {
+  font-size: 0.8125rem;
+  color: rgba(255,255,255,0.42);
+  line-height: 1.45;
+}
+
+
+
+/* ── Steps section ── */
+.apply-steps-section {
+  background: var(--color-cream-dark);
+  padding: 88px 0 108px;
+}
+
+.apply-steps-intro {
+  margin-bottom: 64px;
+}
+
+.apply-steps-intro h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(1.625rem, 3.5vw, 2.25rem);
+  font-weight: 700;
+  color: var(--color-text-dark);
+  letter-spacing: -0.03em;
+  margin-top: 10px;
+  line-height: 1.15;
+}
+
+/* ── Individual steps ── */
+.apply-steps {
+  display: flex;
+  flex-direction: column;
+}
+
+.apply-step {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 0 36px;
+  padding: 40px 0;
+  border-top: 1px solid var(--color-border-cream);
+  align-items: start;
+}
+
+.apply-step:last-child {
+  border-bottom: 1px solid var(--color-border-cream);
+}
+
+.apply-step__num {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: var(--color-red);
+  letter-spacing: -0.05em;
+  line-height: 1;
+  opacity: 0.35;
+  text-align: right;
+  padding-top: 4px;
+  user-select: none;
+}
+
+.apply-step__title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text-dark);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 6px;
+}
+
+.apply-step__date {
+  display: inline-block;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--color-red);
+  opacity: 0.8;
+  margin-bottom: 14px;
+}
+
+.apply-step__desc {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+  line-height: 1.75;
+  max-width: 680px;
+}
+
+@media (min-width: 768px) {
+  .apply-step {
+    grid-template-columns: 88px 1fr;
+    gap: 0 44px;
+  }
+  .apply-step__num {
+    font-size: 3.5rem;
+  }
+}
