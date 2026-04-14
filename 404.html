@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | Albanian Trailblazers</title>
+  <meta name="robots" content="noindex">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/images/logo-black.png">
+
+  <meta name="theme-color" content="#15130E">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <style>
+    .error-page {
+      min-height: 100vh;
+      background-color: #15130E;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    .error-page__inner {
+      max-width: 520px;
+    }
+    .error-page__code {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(6rem, 20vw, 10rem);
+      font-weight: 600;
+      line-height: 1;
+      color: #E05535;
+      margin: 0 0 1rem;
+    }
+    .error-page__title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.5rem, 4vw, 2rem);
+      font-weight: 600;
+      color: #F7F3EC;
+      margin: 0 0 1rem;
+    }
+    .error-page__text {
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      color: rgba(247, 243, 236, 0.65);
+      line-height: 1.6;
+      margin: 0 0 2.5rem;
+    }
+    .error-page__logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      text-decoration: none;
+      margin-bottom: 3rem;
+    }
+    .error-page__logo-mark {
+      width: 32px;
+      height: 32px;
+      background-image: url('assets/images/logo-white.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .error-page__logo-name {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #F7F3EC;
+    }
+  </style>
+</head>
+<body>
+  <div class="error-page">
+    <div class="error-page__inner">
+      <a href="index.html" class="error-page__logo">
+        <span class="error-page__logo-mark"></span>
+        <span class="error-page__logo-name">Albanian Trailblazers</span>
+      </a>
+      <p class="error-page__code">404</p>
+      <h1 class="error-page__title">This page doesn't exist.</h1>
+      <p class="error-page__text">The page you're looking for may have moved or never existed. Head back to the homepage and find your path from there.</p>
+      <a href="index.html" class="btn btn--solid-red">Back to homepage</a>
+    </div>
+  </div>
+</body>
+</html>
