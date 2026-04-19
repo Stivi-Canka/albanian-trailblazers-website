@@ -111,12 +111,10 @@ button {
 .btn--solid-red {
   background: var(--color-red);
   color: var(--color-white);
-  box-shadow: 0 4px 20px var(--color-red-glow);
 }
 
 .btn--solid-red:hover {
   background: #c94a2e;
-  box-shadow: 0 6px 28px var(--color-red-glow);
 }
 
 .btn--ghost-white {
@@ -272,8 +270,10 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 40px;
+  padding: 96px 24px 48px;
+  overflow-y: auto;
   z-index: 999;
   opacity: 0;
   pointer-events: none;
@@ -661,6 +661,18 @@ button {
   100% { opacity: 1; color: rgba(255,255,255,0.5); text-shadow: none; }
 }
 
+
+@media (max-width: 768px) {
+  .network {
+    padding: 48px 0;
+  }
+  .network__cluster {
+    gap: 5px 20px;
+  }
+  .network__name {
+    font-size: 0.875rem;
+  }
+}
 
 /* ========= MISSION ========= */
 .mission {
@@ -1237,6 +1249,53 @@ button {
 
 .updates__cta a:hover {
   opacity: 0.75;
+}
+
+/* ========= NOT-LIVE DIALOG ========= */
+.app-dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  border: none;
+  border-radius: 16px;
+  padding: 0;
+  max-width: 380px;
+  width: calc(100% - 48px);
+  background: var(--color-cream);
+  box-shadow: 0 24px 80px rgba(0,0,0,0.25);
+}
+
+.app-dialog::backdrop {
+  background: rgba(21,19,14,0.72);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.app-dialog__inner {
+  padding: 40px 36px;
+  text-align: center;
+}
+
+.app-dialog__title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: var(--color-text-dark);
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+}
+
+.app-dialog__text {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+  line-height: 1.65;
+  margin-bottom: 28px;
+}
+
+.app-dialog__close {
+  width: 100%;
 }
 
 /* ========= FOOTER ========= */

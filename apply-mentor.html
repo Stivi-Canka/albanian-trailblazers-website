@@ -270,6 +270,29 @@
     </div>
   </footer>
 
+  <dialog class="app-dialog" id="notLiveDialog">
+    <div class="app-dialog__inner">
+      <h2 class="app-dialog__title">This application is not open yet.</h2>
+      <p class="app-dialog__text">Please check back later.</p>
+      <button class="btn btn--solid-red app-dialog__close">Got it</button>
+    </div>
+  </dialog>
+
   <script src="js/main.js"></script>
+  <script>
+    (function () {
+      var dialog = document.getElementById('notLiveDialog');
+      document.querySelector('.apply-hero__cta').addEventListener('click', function (e) {
+        e.preventDefault();
+        dialog.showModal();
+      });
+      document.querySelector('.app-dialog__close').addEventListener('click', function () {
+        dialog.close();
+      });
+      dialog.addEventListener('click', function (e) {
+        if (e.target === dialog) dialog.close();
+      });
+    })();
+  </script>
 </body>
 </html>
