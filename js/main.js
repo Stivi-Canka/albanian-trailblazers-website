@@ -17,31 +17,10 @@ handleNavScroll();
 var hamburger = document.querySelector('.nav__hamburger');
 var overlay = document.querySelector('.nav__overlay');
 
-var scrollLockY = 0;
-
-function lockScroll() {
-  scrollLockY = window.scrollY;
-  document.body.style.position = 'fixed';
-  document.body.style.top = '-' + scrollLockY + 'px';
-  document.body.style.width = '100%';
-}
-
-function unlockScroll() {
-  document.body.style.position = '';
-  document.body.style.top = '';
-  document.body.style.width = '';
-  window.scrollTo(0, scrollLockY);
-  handleNavScroll();
-}
-
 hamburger.addEventListener('click', function () {
   hamburger.classList.toggle('active');
   overlay.classList.toggle('open');
-  if (overlay.classList.contains('open')) {
-    lockScroll();
-  } else {
-    unlockScroll();
-  }
+  document.body.style.overflow = overlay.classList.contains('open') ? 'hidden' : '';
 });
 
 // Close overlay when any direct link is clicked
@@ -49,7 +28,7 @@ overlay.querySelectorAll('a').forEach(function (link) {
   link.addEventListener('click', function () {
     hamburger.classList.remove('active');
     overlay.classList.remove('open');
-    unlockScroll();
+    document.body.style.overflow = '';
     overlay.querySelectorAll('.nav__overlay-group').forEach(function (g) {
       g.classList.remove('open');
     });

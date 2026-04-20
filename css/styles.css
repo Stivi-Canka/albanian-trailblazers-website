@@ -273,7 +273,8 @@ button {
   justify-content: flex-start;
   gap: 40px;
   padding: 96px 24px 48px;
-  overflow-y: auto;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   overscroll-behavior: contain;
   z-index: 999;
   opacity: 0;
