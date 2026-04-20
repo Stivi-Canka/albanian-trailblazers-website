@@ -1,57 +1,32 @@
 // ========= STICKY NAV =========
 var nav = document.querySelector('.nav');
 
-function handleNavScroll() {
-  if (overlay && overlay.classList.contains('open')) return;
+window.addEventListener('scroll', function () {
+  if (document.documentElement.classList.contains('menu-open')) return;
   if (window.scrollY > 40) {
     nav.classList.add('scrolled');
   } else {
     nav.classList.remove('scrolled');
   }
-}
-
-window.addEventListener('scroll', handleNavScroll, { passive: true });
-handleNavScroll();
+}, { passive: true });
 
 // ========= MOBILE NAV TOGGLE =========
 var hamburger = document.querySelector('.nav__hamburger');
 var overlay = document.querySelector('.nav__overlay');
 
+function closeMenu() {
+  document.documentElement.classList.remove('menu-open');
+  hamburger.classList.remove('active');
+}
+
 hamburger.addEventListener('click', function () {
-  hamburger.classList.toggle('active');
-  overlay.classList.toggle('open');
-  if (overlay.classList.contains('open')) {
-    window.scrollTo(0, 0);
-    document.body.style.overflow = 'hidden';
-  } else {
-    document.body.style.overflow = '';
-  }
+  var willOpen = !document.documentElement.classList.contains('menu-open');
+  document.documentElement.classList.toggle('menu-open', willOpen);
+  hamburger.classList.toggle('active', willOpen);
 });
 
-// Close overlay when any direct link is clicked
 overlay.querySelectorAll('a').forEach(function (link) {
-  link.addEventListener('click', function () {
-    hamburger.classList.remove('active');
-    overlay.classList.remove('open');
-    document.body.style.overflow = '';
-    overlay.querySelectorAll('.nav__overlay-group').forEach(function (g) {
-      g.classList.remove('open');
-    });
-  });
-});
-
-// Mobile overlay accordion — one group open at a time
-overlay.querySelectorAll('.nav__overlay-toggle').forEach(function (toggle) {
-  toggle.addEventListener('click', function () {
-    var group = toggle.closest('.nav__overlay-group');
-    var isOpen = group.classList.contains('open');
-    overlay.querySelectorAll('.nav__overlay-group').forEach(function (g) {
-      g.classList.remove('open');
-    });
-    if (!isOpen) {
-      group.classList.add('open');
-    }
-  });
+  link.addEventListener('click', closeMenu);
 });
 
 // ========= DESKTOP DROPDOWNS =========

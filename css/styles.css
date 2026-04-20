@@ -262,41 +262,30 @@ button {
   transform: rotate(-45deg) translate(5.5px, -5.5px);
 }
 
-/* Mobile overlay */
+/* Mobile overlay — simple flat panel, class-driven via html.menu-open */
 .nav__overlay {
+  display: none;
   position: fixed;
   inset: 0;
   background: var(--color-void);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 40px;
-  padding: 96px 24px 48px;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
-  overscroll-behavior: contain;
   z-index: 999;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
-.nav__overlay.open {
-  opacity: 1;
-  pointer-events: all;
+html.menu-open,
+html.menu-open body {
+  overflow: hidden;
 }
 
-.nav__overlay a {
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 2rem;
-  font-weight: 500;
-  color: var(--color-white);
-  transition: color 0.2s;
+html.menu-open .nav__overlay {
+  display: block;
 }
 
-.nav__overlay a:hover {
-  color: var(--color-red);
+html.menu-open .nav {
+  background: rgba(21, 19, 14, 0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
 
 /* ========= DROPDOWN NAV ========= */
@@ -397,81 +386,53 @@ button {
   border-left-color: var(--color-red);
 }
 
-/* Mobile overlay accordion */
-.nav__overlay-link {
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 2rem;
-  font-weight: 500;
-  color: var(--color-white);
-  transition: color 0.2s;
+/* Mobile overlay inner — flat list of links */
+.nav__overlay-inner {
+  display: flex;
+  flex-direction: column;
+  padding: 104px 32px 56px;
+  max-width: 480px;
+  margin: 0 auto;
 }
 
-.nav__overlay-link:hover {
+.nav__overlay-inner a {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--color-white);
+  padding: 11px 0;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.nav__overlay-inner a:active {
   color: var(--color-red);
 }
 
-.nav__overlay-group {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.nav__overlay-toggle {
+.nav__overlay-label {
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 2rem;
-  font-weight: 500;
-  color: var(--color-white);
-  background: none;
-  border: none;
-  cursor: pointer;
-  transition: color 0.2s;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: rgba(255,255,255,0.35);
+  margin-top: 28px;
+  margin-bottom: 2px;
 }
 
-.nav__overlay-toggle svg {
-  transition: transform 0.2s;
-  opacity: 0.5;
+.nav__overlay-cta {
+  margin-top: 36px;
+  align-self: flex-start;
+  border: 1px solid var(--color-red);
+  border-radius: 100px;
+  padding: 12px 28px !important;
+  font-size: 1rem !important;
+  color: var(--color-red) !important;
 }
 
-.nav__overlay-toggle:hover,
-.nav__overlay-group.open .nav__overlay-toggle {
-  color: var(--color-red);
-}
-
-.nav__overlay-group.open .nav__overlay-toggle svg {
-  transform: rotate(180deg);
-  opacity: 1;
-}
-
-.nav__overlay-sub {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  max-height: 0;
-  overflow: hidden;
-  opacity: 0;
-  transition: max-height 0.35s ease, opacity 0.3s ease, padding 0.3s ease;
-}
-
-.nav__overlay-group.open .nav__overlay-sub {
-  max-height: 400px;
-  opacity: 1;
-  padding: 12px 0;
-}
-
-.nav__overlay-sub a {
-  font-family: 'Inter', sans-serif;
-  font-size: 1.125rem;
-  font-weight: 400;
-  color: rgba(255,255,255,0.55);
-  transition: color 0.2s;
-}
-
-.nav__overlay-sub a:hover {
-  color: var(--color-white);
+.nav__overlay-cta:active {
+  background: var(--color-red);
+  color: var(--color-white) !important;
 }
 
 /* ========= HERO ANIMATIONS ========= */
