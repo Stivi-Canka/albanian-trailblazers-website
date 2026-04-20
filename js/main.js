@@ -20,7 +20,12 @@ var overlay = document.querySelector('.nav__overlay');
 hamburger.addEventListener('click', function () {
   hamburger.classList.toggle('active');
   overlay.classList.toggle('open');
-  document.body.style.overflow = overlay.classList.contains('open') ? 'hidden' : '';
+  if (overlay.classList.contains('open')) {
+    window.scrollTo(0, 0);
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = '';
+  }
 });
 
 // Close overlay when any direct link is clicked
