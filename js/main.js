@@ -14,6 +14,9 @@ window.addEventListener('scroll', function () {
 var hamburger = document.querySelector('.nav__hamburger');
 var overlay = document.querySelector('.nav__overlay');
 
+// Reparent overlay to <body> so backdrop-filter on .nav doesn't trap its fixed positioning
+document.body.appendChild(overlay);
+
 function closeMenu() {
   document.documentElement.classList.remove('menu-open');
   hamburger.classList.remove('active');
