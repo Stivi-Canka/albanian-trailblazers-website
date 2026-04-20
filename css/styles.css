@@ -274,6 +274,7 @@ button {
   gap: 40px;
   padding: 96px 24px 48px;
   overflow-y: auto;
+  overscroll-behavior: contain;
   z-index: 999;
   opacity: 0;
   pointer-events: none;
