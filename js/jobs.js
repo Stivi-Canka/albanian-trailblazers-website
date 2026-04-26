@@ -16,6 +16,8 @@ document.querySelectorAll('.job-card__header').forEach(header => {
 const dialog = document.getElementById('notLiveDialog');
 
 document.querySelectorAll('.job-card__apply').forEach(btn => {
+  const href = btn.getAttribute('href');
+  if (href && href !== '#' && !href.startsWith('javascript:')) return;
   btn.addEventListener('click', e => {
     e.preventDefault();
     dialog.showModal();
