@@ -111,7 +111,7 @@
           <p class="section-label">Mentor Application</p>
           <h1 class="apply-hero__title apply-hero__title--long">Someone opened a door for you.<br><span>Now open one.</span></h1>
           <p class="apply-hero__sub">Your experience is exactly what someone out there needs. Join our global network of Albanian professionals and give back to the next generation.</p>
-          <a href="#" class="btn btn--solid-red apply-hero__cta">Apply now</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc4Axi1piw5VeJXuLtmMvxEjuYvRiQ552hjL84YDIvObL8zvA/viewform?usp=dialog" target="_blank" rel="noopener" class="btn btn--solid-red apply-hero__cta">Apply now</a>
         </div>
 
         <div class="apply-hero__facts">
@@ -265,29 +265,6 @@
     </div>
   </footer>
 
-  <dialog class="app-dialog" id="notLiveDialog">
-    <div class="app-dialog__inner">
-      <h2 class="app-dialog__title">This application is not open yet.</h2>
-      <p class="app-dialog__text">Please check back later.</p>
-      <button class="btn btn--solid-red app-dialog__close">Got it</button>
-    </div>
-  </dialog>
-
   <script src="js/main.js"></script>
-  <script>
-    (function () {
-      var dialog = document.getElementById('notLiveDialog');
-      document.querySelector('.apply-hero__cta').addEventListener('click', function (e) {
-        e.preventDefault();
-        dialog.showModal();
-      });
-      document.querySelector('.app-dialog__close').addEventListener('click', function () {
-        dialog.close();
-      });
-      dialog.addEventListener('click', function (e) {
-        if (e.target === dialog) dialog.close();
-      });
-    })();
-  </script>
 </body>
 </html>
